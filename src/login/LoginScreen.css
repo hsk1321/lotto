@@ -1,0 +1,22 @@
+.login__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.input__form {
+    padding: 10px;
+}
+
+.input__box {
+    height: 30px;
+    width: 300px;
+}
+
+.submit__btn {
+    height: 30px;
+    width: 220px;
+    margin-top: 30px;
+}
