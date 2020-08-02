@@ -1,22 +1,85 @@
+body {
+    background-color: #dbdbdb;
+}
+
 .login__form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px;
+    background-color: #cf7500;
+    border-radius: 30px;
 }
 
 .input__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #dbdbdb;
 }
 
 .input__box {
     height: 30px;
-    width: 300px;
+    width: 250px;
+    font-size: large;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    color: white;
+    outline: none;
 }
 
 .submit__btn {
     height: 30px;
     width: 220px;
     margin-top: 30px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #f0a500;
+    color: #dbdbdb;
+    outline: none;
+}
+
+.submit__btn {
+    background: #f0a500;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+.submit__btn:hover {
+    background: #fff;
+    color: #cf7500;
+}
+.submit__btn:before,
+.submit__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #cf7500;
+    transition: 400ms ease all;
+}
+.submit__btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+.submit__btn:hover:before,
+.submit__btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
 }
