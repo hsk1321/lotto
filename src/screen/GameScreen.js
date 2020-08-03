@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class MainScreen extends Component {
+class GameScreen extends Component {
     render = () => {
         return (
             <div>
-                <h1>Main</h1>
+                <h1>Game</h1>
             </div>
         );
     };
 }
 
-export default MainScreen;
+export default GameScreen;

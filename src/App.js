@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Login from "./login/LoginScreen";
+import MainNavigator from "./route/MainNavigator";
 
 class App extends Component {
     render = () => {
         return (
             <div className="App">
-                <Login />
+                <MainNavigator />
             </div>
         );
     };
