@@ -10,6 +10,7 @@ body {
     padding: 30px;
     background-color: #cf7500;
     border-radius: 30px;
+    margin-top: 200px;
 }
 
 .input__form {
@@ -34,10 +35,14 @@ body {
     outline: none;
 }
 
+.input__box:focus {
+    border-bottom: 2px solid #005086;
+}
+
 .submit__btn {
     height: 30px;
     width: 220px;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
     border-width: 0px;
     background-color: #f0a500;
@@ -82,4 +87,27 @@ body {
 .submit__btn:hover:after {
     width: 100%;
     transition: 800ms ease all;
+}
+
+.login__screen__contents {
+    display: flex;
+    margin-top: 10px;
+    width: 220px;
+    justify-content: space-around;
+}
+
+.link__contents {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.link__contents:hover {
+    color: #dbdbdb;
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
 }
