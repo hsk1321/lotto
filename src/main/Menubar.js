@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Menubar.css";
 import { Link } from "react-router-dom";
+import { IoMdContact } from "react-icons/io";
 
 class Menubar extends Component {
     render = () => {
@@ -12,14 +13,14 @@ class Menubar extends Component {
                 <Link to="/premium" className="main__premium">
                     Premium
                 </Link>
-                <Link to="/game" className="main__game">
-                    Game
+                <Link to="/board" className="main__board">
+                    Notice board
                 </Link>
-                <Link to="/getcoin" className="main__get__coin">
-                    Get
+                <Link to="/chatting" className="main__chat">
+                    Chat
                 </Link>
-                <Link to="/profile" className="">
-                    Proflie
+                <Link to="/profile" className="main__profile">
+                    <IoMdContact />
                 </Link>
             </div>
         );

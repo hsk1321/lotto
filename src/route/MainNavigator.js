@@ -3,8 +3,8 @@ import Menubar from "../main/Menubar";
 import { Route } from "react-router-dom";
 import MainScreen from "../main/MainScreen";
 import PremiumScreen from "../screen/PremiumScreen";
-import GameScreen from "../screen/GameScreen";
-import GetCoinScreen from "../screen/GetCoinScreen";
+import NoticeBoardScreen from "../screen/NoticeBoardScreen";
+import ChatScreen from "../screen/ChatScreen";
 import ProfileScreen from "../screen/ProfileScreen";
 
 class MainNavigator extends Component {
@@ -13,13 +13,13 @@ class MainNavigator extends Component {
             <div>
                 <Menubar />
                 <Route path="/main" component={MainScreen} exact={true} />
+                <Route path="/premium" component={PremiumScreen} exact={true} />
                 <Route
-                    path="/preminum"
-                    component={PremiumScreen}
+                    path="/board"
+                    component={NoticeBoardScreen}
                     exact={true}
                 />
-                <Route path="/game" component={GameScreen} exact={true} />
-                <Route path="/getcoin" component={GetCoinScreen} exact={true} />
+                <Route path="/chatting" component={ChatScreen} exact={true} />
                 <Route path="/profile" component={ProfileScreen} exact={true} />
             </div>
         );
